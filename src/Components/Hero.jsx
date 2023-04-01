@@ -18,7 +18,7 @@ const Hero = () => {
                 ]}
                 cursor={true}
                 repeat={Infinity}
-                speed={30}
+                speed={29}
                 
               />
              </p>
