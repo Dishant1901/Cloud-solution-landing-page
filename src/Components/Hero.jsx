@@ -1,4 +1,5 @@
 import React from 'react'
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
@@ -7,7 +8,20 @@ const Hero = () => {
             <p className='text-[#00df9a] font-bold p-2'> GROWING WITH DATA ANALYTICS</p>
             <h1 className=' md:text-7xl sm:text-6xl text-4xl md:py-6 font-bold'>Grow with data</h1>
             <div>
-            <p className='md:text-5xl sm:text-4xl text-xl py-4 '>Fast,Flexible Solution for </p>
+            <p className='md:text-5xl sm:text-4xl text-xl py-4 '> Fast,Flexible Solution for{' '}
+              <TypeAnimation className='text-[#00df9a] font-medium '
+                sequence={[
+                  'Cloud ',1500,
+                  ' Monitoring',1500,
+                  'Bussiness ',1500,
+
+                ]}
+                cursor={true}
+                repeat={Infinity}
+                speed={30}
+                
+              />
+             </p>
             </div>
             <p className='md:text-2xl text-xl font-bold text-gray-600'>Monitor your clusters with various cloud technologies.</p>
             <button className=' bg-[#00df9a] w-40 mx-auto font-medium text-black rounded-lg py-2 my-6'>Get Started</button>
